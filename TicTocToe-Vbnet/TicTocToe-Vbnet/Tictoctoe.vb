@@ -59,6 +59,12 @@
             'Right Vertical result
         ElseIf btnupperright.Text = btnright.Text And btnright.Text = btnbottomright.Text And btnupperright.Enabled = False Then
             PlayerChecker(btnupperright.Text)
+            'Diagonal result \
+        ElseIf btnupperleft.Text = btnmiddle.Text And btnmiddle.Text = btnbottomright.Text And btnupperleft.Enabled = False Then
+            PlayerChecker(btnupperleft.Text)
+            'Diagonal result /
+        ElseIf btnupperright.Text = btnmiddle.Text And btnmiddle.Text = btnbottomleft.Text And btnupperright.Enabled = False Then
+            PlayerChecker(btnupperright.Text)
         End If
 
     End Sub
