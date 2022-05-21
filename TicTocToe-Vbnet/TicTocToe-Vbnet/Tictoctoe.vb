@@ -27,6 +27,7 @@
             playerturn = True
 
         End If
+        'This part Is for the design and disabling the tiles of the game
         btntextonetonine.Enabled = False
         If btntextonetonine.Enabled = False Then
             btntextonetonine.BackColor = System.Drawing.Color.White
@@ -40,15 +41,19 @@
     End Sub
     'this Function is() For determining the winner of the game
     Public Sub WinnerChecker()
-        'UpperBox horizontal result 
+        '   UpperBox horizontal result 
         If btnupperleft.Text = btnupper.Text And btnupper.Text = btnupperright.Text And btnupperleft.Enabled = False Then
             PlayerChecker(btnupperleft.Text)
             'MiddeleBox horizontal result 
         ElseIf btnleft.Text = btnmiddle.Text And btnmiddle.Text = btnright.Text And btnleft.Enabled = False Then
-            PlayerChecker(btnupperleft.Text)
+            PlayerChecker(btnleft.Text)
             'BottomBox horizontal result 
         ElseIf btnbottomleft.Text = btnbottom.Text And btnbottom.Text = btnbottomright.Text And btnbottomleft.Enabled = False Then
-            PlayerChecker(btnupperleft.Text)
+            PlayerChecker(btnbottomleft.Text)
+            'Left Vertical result
+        ElseIf btnupperleft.Text = btnleft.Text And btnleft.Text = btnbottomleft.Text And btnupperleft.Enabled = False Then
+            PlayerChecker(btnbottomleft.Text)
+            'Middle Vertical result
         End If
 
     End Sub
