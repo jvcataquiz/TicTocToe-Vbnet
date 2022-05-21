@@ -52,8 +52,10 @@
             PlayerChecker(btnbottomleft.Text)
             'Left Vertical result
         ElseIf btnupperleft.Text = btnleft.Text And btnleft.Text = btnbottomleft.Text And btnupperleft.Enabled = False Then
-            PlayerChecker(btnbottomleft.Text)
+            PlayerChecker(btnupperleft.Text)
             'Middle Vertical result
+        ElseIf btnupper.Text = btnmiddle.Text And btnmiddle.Text = btnbottom.Text And btnupper.Enabled = False Then
+            PlayerChecker(btnupper.Text)
         End If
 
     End Sub
