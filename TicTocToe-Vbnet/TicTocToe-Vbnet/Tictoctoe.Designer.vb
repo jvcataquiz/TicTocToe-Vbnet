@@ -32,6 +32,7 @@ Partial Class Tictoctoe
         Me.btnbottomleft = New System.Windows.Forms.Button()
         Me.btnbottom = New System.Windows.Forms.Button()
         Me.btnbottomright = New System.Windows.Forms.Button()
+        Me.btnquit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnupperleft
@@ -124,12 +125,26 @@ Partial Class Tictoctoe
         Me.btnbottomright.TabIndex = 8
         Me.btnbottomright.UseVisualStyleBackColor = False
         '
+        'btnquit
+        '
+        Me.btnquit.BackColor = System.Drawing.Color.Red
+        Me.btnquit.FlatAppearance.BorderSize = 0
+        Me.btnquit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnquit.Font = New System.Drawing.Font("Arial Rounded MT Bold", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnquit.Location = New System.Drawing.Point(265, 401)
+        Me.btnquit.Name = "btnquit"
+        Me.btnquit.Size = New System.Drawing.Size(59, 23)
+        Me.btnquit.TabIndex = 9
+        Me.btnquit.Text = "QUIT"
+        Me.btnquit.UseVisualStyleBackColor = False
+        '
         'Tictoctoe
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(338, 436)
         Me.ControlBox = False
+        Me.Controls.Add(Me.btnquit)
         Me.Controls.Add(Me.btnbottomright)
         Me.Controls.Add(Me.btnbottom)
         Me.Controls.Add(Me.btnbottomleft)
@@ -158,4 +173,5 @@ Partial Class Tictoctoe
     Friend WithEvents btnbottomleft As Button
     Friend WithEvents btnbottom As Button
     Friend WithEvents btnbottomright As Button
+    Friend WithEvents btnquit As Button
 End Class
