@@ -1,6 +1,8 @@
 ﻿Public Class Tictoctoe
     'This Boolean Is to control the flow of the Game
     Dim playerturn As Boolean = True
+    Dim p_onescore As UShort
+    Dim p_twoscore As UShort
 
     'When this button click the Game will Exit
     Private Sub btnquit_Click(sender As Object, e As EventArgs) Handles btnquit.Click
@@ -39,9 +41,11 @@
             End If
             'calling the function
             WinnerChecker()
-
+            'Scorer counter
+            playeronescore.Text = Convert.ToString(p_onescore)
+            playertwoscore.Text = Convert.ToString(p_twoscore)
         Catch ex As Exception
-            MessageBox.Show("Oppppsss!!!Pushed Already ")
+            MessageBox.Show("Oppppsss!!! ")
         End Try
 
     End Sub
@@ -86,8 +90,11 @@
     'To minimize the space And Memory i use this function to determin the winner of the game
     Function PlayerChecker(check) As String
         If check = "X" Then
+            p_onescore += 1
             Return MessageBox.Show("Winner: Player 1")
+
         Else
+            p_twoscore += 1
             Return MessageBox.Show("Winner: Player 2")
         End If
 
@@ -101,6 +108,8 @@
             i.BackColor = System.Drawing.Color.Black
 
         Next
+        playerturn = True
     End Sub
+
 
 End Class
