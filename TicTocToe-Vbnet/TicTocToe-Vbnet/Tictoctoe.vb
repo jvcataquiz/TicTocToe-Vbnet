@@ -118,4 +118,9 @@
         LabelPlayer2.Text = playertwoname
 
     End Sub
+
+    Private Sub btnback_Click(sender As Object, e As EventArgs) Handles btnback.Click
+        Me.Hide()
+        FirstPage.Show()
+    End Sub
 End Class

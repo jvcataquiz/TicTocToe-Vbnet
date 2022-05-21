@@ -40,6 +40,7 @@ Partial Class Tictoctoe
         Me.playeronescore = New System.Windows.Forms.Label()
         Me.playertwoscore = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btnback = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -278,6 +279,20 @@ Partial Class Tictoctoe
         Me.PictureBox1.TabIndex = 16
         Me.PictureBox1.TabStop = False
         '
+        'btnback
+        '
+        Me.btnback.BackColor = System.Drawing.Color.DarkSlateGray
+        Me.btnback.FlatAppearance.BorderSize = 0
+        Me.btnback.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnback.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnback.ForeColor = System.Drawing.Color.Yellow
+        Me.btnback.Location = New System.Drawing.Point(12, 401)
+        Me.btnback.Name = "btnback"
+        Me.btnback.Size = New System.Drawing.Size(81, 23)
+        Me.btnback.TabIndex = 17
+        Me.btnback.Text = "<- BACK"
+        Me.btnback.UseVisualStyleBackColor = False
+        '
         'Tictoctoe
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -286,6 +301,7 @@ Partial Class Tictoctoe
         Me.BackColor = System.Drawing.Color.MediumSpringGreen
         Me.ClientSize = New System.Drawing.Size(338, 436)
         Me.ControlBox = False
+        Me.Controls.Add(Me.btnback)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.playertwoscore)
         Me.Controls.Add(Me.playeronescore)
@@ -332,4 +348,5 @@ Partial Class Tictoctoe
     Friend WithEvents playeronescore As Label
     Friend WithEvents playertwoscore As Label
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents btnback As Button
 End Class
