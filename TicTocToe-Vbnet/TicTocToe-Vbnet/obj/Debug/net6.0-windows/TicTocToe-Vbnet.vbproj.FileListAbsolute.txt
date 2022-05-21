@@ -15,3 +15,5 @@ C:\Users\Jv Cataquiz\source\repos\Vbnet\Assignment1\Tictoctoe-vbnet\TicTocToe-Vb
 C:\Users\Jv Cataquiz\source\repos\Vbnet\Assignment1\Tictoctoe-vbnet\TicTocToe-Vbnet\TicTocToe-Vbnet\obj\Debug\net6.0-windows\TicTocToe-Vbnet.pdb
 C:\Users\Jv Cataquiz\source\repos\Vbnet\Assignment1\Tictoctoe-vbnet\TicTocToe-Vbnet\TicTocToe-Vbnet\obj\Debug\net6.0-windows\TicTocToe-Vbnet.genruntimeconfig.cache
 C:\Users\Jv Cataquiz\source\repos\Vbnet\Assignment1\Tictoctoe-vbnet\TicTocToe-Vbnet\TicTocToe-Vbnet\obj\Debug\net6.0-windows\ref\TicTocToe-Vbnet.dll
+C:\Users\Jv Cataquiz\source\repos\Vbnet\Assignment1\Tictoctoe-vbnet\TicTocToe-Vbnet\TicTocToe-Vbnet\obj\Debug\net6.0-windows\TicTocToe_Vbnet.FirstPage.resources
+C:\Users\Jv Cataquiz\source\repos\Vbnet\Assignment1\Tictoctoe-vbnet\TicTocToe-Vbnet\TicTocToe-Vbnet\obj\Debug\net6.0-windows\TicTocToe_Vbnet.Resources.resources
