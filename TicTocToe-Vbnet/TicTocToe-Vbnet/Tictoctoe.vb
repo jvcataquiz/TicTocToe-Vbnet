@@ -40,12 +40,21 @@
     End Sub
     'this Function is() For determining the winner of the game
     Public Sub WinnerChecker()
-        If btnupperleft.Text = btnupper.Text And btnupper.Text = btnupperright.Text Then
-            MessageBox.Show("Player1 winss!!!")
-
+        'UpperBox horizontal result
+        If btnupperleft.Text = btnupper.Text And btnupper.Text = btnupperright.Text And btnupperleft.Enabled = False Then
+            PlayerChecker(btnupperleft.Text)
         End If
 
     End Sub
 
+    'To minimize the space And Memory i use this function to determin the winner of the game
+    Function PlayerChecker(check) As String
+        If check = "X" Then
+            Return MessageBox.Show("Winner: Player 1")
+        Else
+            Return MessageBox.Show("Winner: Player 2")
+        End If
+
+    End Function
 
 End Class
