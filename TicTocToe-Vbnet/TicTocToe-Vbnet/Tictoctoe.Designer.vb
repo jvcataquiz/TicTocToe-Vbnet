@@ -39,6 +39,7 @@ Partial Class Tictoctoe
         '
         Me.btnupperleft.BackColor = System.Drawing.Color.Black
         Me.btnupperleft.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnupperleft.ForeColor = System.Drawing.Color.White
         Me.btnupperleft.Location = New System.Drawing.Point(12, 71)
         Me.btnupperleft.Name = "btnupperleft"
         Me.btnupperleft.Size = New System.Drawing.Size(100, 100)
@@ -49,6 +50,7 @@ Partial Class Tictoctoe
         '
         Me.btnupper.BackColor = System.Drawing.Color.Black
         Me.btnupper.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnupper.ForeColor = System.Drawing.Color.White
         Me.btnupper.Location = New System.Drawing.Point(118, 71)
         Me.btnupper.Name = "btnupper"
         Me.btnupper.Size = New System.Drawing.Size(100, 100)
@@ -59,6 +61,7 @@ Partial Class Tictoctoe
         '
         Me.btnupperright.BackColor = System.Drawing.Color.Black
         Me.btnupperright.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnupperright.ForeColor = System.Drawing.Color.White
         Me.btnupperright.Location = New System.Drawing.Point(224, 71)
         Me.btnupperright.Name = "btnupperright"
         Me.btnupperright.Size = New System.Drawing.Size(100, 100)
@@ -69,6 +72,7 @@ Partial Class Tictoctoe
         '
         Me.btnleft.BackColor = System.Drawing.Color.Black
         Me.btnleft.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnleft.ForeColor = System.Drawing.Color.White
         Me.btnleft.Location = New System.Drawing.Point(12, 177)
         Me.btnleft.Name = "btnleft"
         Me.btnleft.Size = New System.Drawing.Size(100, 100)
@@ -79,6 +83,7 @@ Partial Class Tictoctoe
         '
         Me.btnmiddle.BackColor = System.Drawing.Color.Black
         Me.btnmiddle.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnmiddle.ForeColor = System.Drawing.Color.White
         Me.btnmiddle.Location = New System.Drawing.Point(118, 177)
         Me.btnmiddle.Name = "btnmiddle"
         Me.btnmiddle.Size = New System.Drawing.Size(100, 100)
@@ -89,6 +94,7 @@ Partial Class Tictoctoe
         '
         Me.btnright.BackColor = System.Drawing.Color.Black
         Me.btnright.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnright.ForeColor = System.Drawing.Color.White
         Me.btnright.Location = New System.Drawing.Point(224, 177)
         Me.btnright.Name = "btnright"
         Me.btnright.Size = New System.Drawing.Size(100, 100)
@@ -99,6 +105,7 @@ Partial Class Tictoctoe
         '
         Me.btnbottomleft.BackColor = System.Drawing.Color.Black
         Me.btnbottomleft.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnbottomleft.ForeColor = System.Drawing.Color.White
         Me.btnbottomleft.Location = New System.Drawing.Point(12, 284)
         Me.btnbottomleft.Name = "btnbottomleft"
         Me.btnbottomleft.Size = New System.Drawing.Size(100, 100)
@@ -109,6 +116,7 @@ Partial Class Tictoctoe
         '
         Me.btnbottom.BackColor = System.Drawing.Color.Black
         Me.btnbottom.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnbottom.ForeColor = System.Drawing.Color.White
         Me.btnbottom.Location = New System.Drawing.Point(118, 284)
         Me.btnbottom.Name = "btnbottom"
         Me.btnbottom.Size = New System.Drawing.Size(100, 100)
@@ -119,6 +127,7 @@ Partial Class Tictoctoe
         '
         Me.btnbottomright.BackColor = System.Drawing.Color.Black
         Me.btnbottomright.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnbottomright.ForeColor = System.Drawing.Color.White
         Me.btnbottomright.Location = New System.Drawing.Point(224, 284)
         Me.btnbottomright.Name = "btnbottomright"
         Me.btnbottomright.Size = New System.Drawing.Size(100, 100)
