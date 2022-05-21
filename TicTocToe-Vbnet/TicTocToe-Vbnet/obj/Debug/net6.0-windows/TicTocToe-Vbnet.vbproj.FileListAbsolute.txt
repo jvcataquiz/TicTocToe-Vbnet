@@ -1,0 +1,17 @@
+C:\Users\Jv Cataquiz\source\repos\Vbnet\Assignment1\Tictoctoe-vbnet\TicTocToe-Vbnet\TicTocToe-Vbnet\obj\Debug\net6.0-windows\TicTocToe-Vbnet.vbproj.AssemblyReference.cache
+C:\Users\Jv Cataquiz\source\repos\Vbnet\Assignment1\Tictoctoe-vbnet\TicTocToe-Vbnet\TicTocToe-Vbnet\obj\Debug\net6.0-windows\TicTocToe_Vbnet.Tictoctoe.resources
+C:\Users\Jv Cataquiz\source\repos\Vbnet\Assignment1\Tictoctoe-vbnet\TicTocToe-Vbnet\TicTocToe-Vbnet\obj\Debug\net6.0-windows\TicTocToe-Vbnet.vbproj.GenerateResource.cache
+C:\Users\Jv Cataquiz\source\repos\Vbnet\Assignment1\Tictoctoe-vbnet\TicTocToe-Vbnet\TicTocToe-Vbnet\obj\Debug\net6.0-windows\TicTocToe-Vbnet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jv Cataquiz\source\repos\Vbnet\Assignment1\Tictoctoe-vbnet\TicTocToe-Vbnet\TicTocToe-Vbnet\obj\Debug\net6.0-windows\TicTocToe-Vbnet.AssemblyInfoInputs.cache
+C:\Users\Jv Cataquiz\source\repos\Vbnet\Assignment1\Tictoctoe-vbnet\TicTocToe-Vbnet\TicTocToe-Vbnet\obj\Debug\net6.0-windows\TicTocToe-Vbnet.AssemblyInfo.vb
+C:\Users\Jv Cataquiz\source\repos\Vbnet\Assignment1\Tictoctoe-vbnet\TicTocToe-Vbnet\TicTocToe-Vbnet\obj\Debug\net6.0-windows\TicTocToe-Vbnet.vbproj.CoreCompileInputs.cache
+C:\Users\Jv Cataquiz\source\repos\Vbnet\Assignment1\Tictoctoe-vbnet\TicTocToe-Vbnet\TicTocToe-Vbnet\bin\Debug\net6.0-windows\TicTocToe-Vbnet.exe
+C:\Users\Jv Cataquiz\source\repos\Vbnet\Assignment1\Tictoctoe-vbnet\TicTocToe-Vbnet\TicTocToe-Vbnet\bin\Debug\net6.0-windows\TicTocToe-Vbnet.deps.json
+C:\Users\Jv Cataquiz\source\repos\Vbnet\Assignment1\Tictoctoe-vbnet\TicTocToe-Vbnet\TicTocToe-Vbnet\bin\Debug\net6.0-windows\TicTocToe-Vbnet.runtimeconfig.json
+C:\Users\Jv Cataquiz\source\repos\Vbnet\Assignment1\Tictoctoe-vbnet\TicTocToe-Vbnet\TicTocToe-Vbnet\bin\Debug\net6.0-windows\TicTocToe-Vbnet.dll
+C:\Users\Jv Cataquiz\source\repos\Vbnet\Assignment1\Tictoctoe-vbnet\TicTocToe-Vbnet\TicTocToe-Vbnet\bin\Debug\net6.0-windows\TicTocToe-Vbnet.pdb
+C:\Users\Jv Cataquiz\source\repos\Vbnet\Assignment1\Tictoctoe-vbnet\TicTocToe-Vbnet\TicTocToe-Vbnet\obj\Debug\net6.0-windows\TicTocToe-Vbnet.dll
+C:\Users\Jv Cataquiz\source\repos\Vbnet\Assignment1\Tictoctoe-vbnet\TicTocToe-Vbnet\TicTocToe-Vbnet\obj\Debug\net6.0-windows\refint\TicTocToe-Vbnet.dll
+C:\Users\Jv Cataquiz\source\repos\Vbnet\Assignment1\Tictoctoe-vbnet\TicTocToe-Vbnet\TicTocToe-Vbnet\obj\Debug\net6.0-windows\TicTocToe-Vbnet.pdb
+C:\Users\Jv Cataquiz\source\repos\Vbnet\Assignment1\Tictoctoe-vbnet\TicTocToe-Vbnet\TicTocToe-Vbnet\obj\Debug\net6.0-windows\TicTocToe-Vbnet.genruntimeconfig.cache
+C:\Users\Jv Cataquiz\source\repos\Vbnet\Assignment1\Tictoctoe-vbnet\TicTocToe-Vbnet\TicTocToe-Vbnet\obj\Debug\net6.0-windows\ref\TicTocToe-Vbnet.dll
