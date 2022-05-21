@@ -1,4 +1,5 @@
 ﻿Public Class FirstPage
+    'this boolean is for controlling the bg image of the buton music and for controlling the bg music
     Dim musicplayer As Boolean
     Private Sub btnenter_Click(sender As Object, e As EventArgs) Handles btnenter.Click
 
@@ -22,16 +23,21 @@
     End Sub
 
     Private Sub FirstPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'when the game is open the backgroun music will play
         PlayLoopingBackgroundSoundFile()
         musicplayer = True
     End Sub
+    'this function is for playing bg music and looping the wav file (music) is located at the debug folder
     Sub PlayLoopingBackgroundSoundFile()
         My.Computer.Audio.Play("bgmusic.wav", AudioPlayMode.BackgroundLoop)
     End Sub
+    'this function is to stop the bg music
     Sub StopBackgroundSound()
         My.Computer.Audio.Stop()
     End Sub
 
+
+    'this function is for controlling the bg image and music
     Private Sub btnmusic_Click(sender As Object, e As EventArgs) Handles btnmusic.Click
         If musicplayer Then
             btnmusic.Image = System.Drawing.Image.FromFile("music-off.png")

@@ -198,6 +198,7 @@ Partial Class Tictoctoe
         Me.btnquit.Name = "btnquit"
         Me.btnquit.Size = New System.Drawing.Size(59, 23)
         Me.btnquit.TabIndex = 9
+        Me.btnquit.TabStop = False
         Me.btnquit.Text = "QUIT"
         Me.btnquit.UseVisualStyleBackColor = False
         '
