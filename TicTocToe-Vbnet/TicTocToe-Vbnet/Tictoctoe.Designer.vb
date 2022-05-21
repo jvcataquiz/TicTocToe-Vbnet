@@ -39,6 +39,8 @@ Partial Class Tictoctoe
         Me.LabelScore = New System.Windows.Forms.Label()
         Me.playeronescore = New System.Windows.Forms.Label()
         Me.playertwoscore = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnupperleft
@@ -264,6 +266,16 @@ Partial Class Tictoctoe
         Me.playertwoscore.TabIndex = 15
         Me.playertwoscore.Text = "0"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 11)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(172, 50)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 16
+        Me.PictureBox1.TabStop = False
+        '
         'Tictoctoe
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -272,6 +284,7 @@ Partial Class Tictoctoe
         Me.BackColor = System.Drawing.Color.MediumSpringGreen
         Me.ClientSize = New System.Drawing.Size(338, 436)
         Me.ControlBox = False
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.playertwoscore)
         Me.Controls.Add(Me.playeronescore)
         Me.Controls.Add(Me.LabelScore)
@@ -294,6 +307,7 @@ Partial Class Tictoctoe
         Me.Name = "Tictoctoe"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TicTocToe"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -315,4 +329,5 @@ Partial Class Tictoctoe
     Friend WithEvents LabelScore As Label
     Friend WithEvents playeronescore As Label
     Friend WithEvents playertwoscore As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
