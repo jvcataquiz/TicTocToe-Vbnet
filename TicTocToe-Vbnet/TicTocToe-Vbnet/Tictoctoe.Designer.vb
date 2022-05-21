@@ -44,6 +44,7 @@ Partial Class Tictoctoe
         Me.btnupperleft.Name = "btnupperleft"
         Me.btnupperleft.Size = New System.Drawing.Size(100, 100)
         Me.btnupperleft.TabIndex = 0
+        Me.btnupperleft.TabStop = False
         Me.btnupperleft.UseVisualStyleBackColor = False
         '
         'btnupper
@@ -55,6 +56,7 @@ Partial Class Tictoctoe
         Me.btnupper.Name = "btnupper"
         Me.btnupper.Size = New System.Drawing.Size(100, 100)
         Me.btnupper.TabIndex = 1
+        Me.btnupper.TabStop = False
         Me.btnupper.UseVisualStyleBackColor = False
         '
         'btnupperright
@@ -66,6 +68,7 @@ Partial Class Tictoctoe
         Me.btnupperright.Name = "btnupperright"
         Me.btnupperright.Size = New System.Drawing.Size(100, 100)
         Me.btnupperright.TabIndex = 2
+        Me.btnupperright.TabStop = False
         Me.btnupperright.UseVisualStyleBackColor = False
         '
         'btnleft
@@ -77,6 +80,7 @@ Partial Class Tictoctoe
         Me.btnleft.Name = "btnleft"
         Me.btnleft.Size = New System.Drawing.Size(100, 100)
         Me.btnleft.TabIndex = 3
+        Me.btnleft.TabStop = False
         Me.btnleft.UseVisualStyleBackColor = False
         '
         'btnmiddle
@@ -88,6 +92,7 @@ Partial Class Tictoctoe
         Me.btnmiddle.Name = "btnmiddle"
         Me.btnmiddle.Size = New System.Drawing.Size(100, 100)
         Me.btnmiddle.TabIndex = 4
+        Me.btnmiddle.TabStop = False
         Me.btnmiddle.UseVisualStyleBackColor = False
         '
         'btnright
@@ -99,6 +104,7 @@ Partial Class Tictoctoe
         Me.btnright.Name = "btnright"
         Me.btnright.Size = New System.Drawing.Size(100, 100)
         Me.btnright.TabIndex = 5
+        Me.btnright.TabStop = False
         Me.btnright.UseVisualStyleBackColor = False
         '
         'btnbottomleft
@@ -110,6 +116,7 @@ Partial Class Tictoctoe
         Me.btnbottomleft.Name = "btnbottomleft"
         Me.btnbottomleft.Size = New System.Drawing.Size(100, 100)
         Me.btnbottomleft.TabIndex = 6
+        Me.btnbottomleft.TabStop = False
         Me.btnbottomleft.UseVisualStyleBackColor = False
         '
         'btnbottom
@@ -121,6 +128,7 @@ Partial Class Tictoctoe
         Me.btnbottom.Name = "btnbottom"
         Me.btnbottom.Size = New System.Drawing.Size(100, 100)
         Me.btnbottom.TabIndex = 7
+        Me.btnbottom.TabStop = False
         Me.btnbottom.UseVisualStyleBackColor = False
         '
         'btnbottomright
@@ -132,6 +140,7 @@ Partial Class Tictoctoe
         Me.btnbottomright.Name = "btnbottomright"
         Me.btnbottomright.Size = New System.Drawing.Size(100, 100)
         Me.btnbottomright.TabIndex = 8
+        Me.btnbottomright.TabStop = False
         Me.btnbottomright.UseVisualStyleBackColor = False
         '
         'btnquit
