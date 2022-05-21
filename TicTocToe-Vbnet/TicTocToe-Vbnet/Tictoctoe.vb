@@ -43,6 +43,9 @@
         'UpperBox horizontal result 
         If btnupperleft.Text = btnupper.Text And btnupper.Text = btnupperright.Text And btnupperleft.Enabled = False Then
             PlayerChecker(btnupperleft.Text)
+            'MiddeleBox horizontal result 
+        ElseIf btnleft.Text = btnmiddle.Text And btnmiddle.Text = btnright.Text And btnleft.Enabled = False Then
+            PlayerChecker(btnupperleft.Text)
         End If
 
     End Sub
