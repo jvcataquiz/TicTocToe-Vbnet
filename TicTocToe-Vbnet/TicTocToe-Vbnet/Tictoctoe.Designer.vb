@@ -226,6 +226,7 @@ Partial Class Tictoctoe
         '
         'LabelPlayer2
         '
+        Me.LabelPlayer2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.LabelPlayer2.AutoSize = True
         Me.LabelPlayer2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.LabelPlayer2.ForeColor = System.Drawing.Color.Red
@@ -234,6 +235,7 @@ Partial Class Tictoctoe
         Me.LabelPlayer2.Size = New System.Drawing.Size(66, 19)
         Me.LabelPlayer2.TabIndex = 12
         Me.LabelPlayer2.Text = "Player 2 :"
+        Me.LabelPlayer2.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'LabelScore
         '

@@ -23,23 +23,24 @@ Partial Class FirstPage
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FirstPage))
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBoxTitle = New System.Windows.Forms.PictureBox()
         Me.labelplayerone = New System.Windows.Forms.Label()
         Me.labelplayertwo = New System.Windows.Forms.Label()
         Me.textboxplayeronename = New System.Windows.Forms.TextBox()
         Me.textboxplayertwoname = New System.Windows.Forms.TextBox()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.btnenter = New System.Windows.Forms.Button()
+        CType(Me.PictureBoxTitle, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'PictureBox1
+        'PictureBoxTitle
         '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(-2, 12)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(336, 177)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
+        Me.PictureBoxTitle.Image = CType(resources.GetObject("PictureBoxTitle.Image"), System.Drawing.Image)
+        Me.PictureBoxTitle.Location = New System.Drawing.Point(-2, 12)
+        Me.PictureBoxTitle.Name = "PictureBoxTitle"
+        Me.PictureBoxTitle.Size = New System.Drawing.Size(336, 177)
+        Me.PictureBoxTitle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBoxTitle.TabIndex = 0
+        Me.PictureBoxTitle.TabStop = False
         '
         'labelplayerone
         '
@@ -83,31 +84,50 @@ Partial Class FirstPage
         Me.textboxplayertwoname.TabIndex = 4
         Me.textboxplayertwoname.TabStop = False
         '
+        'btnenter
+        '
+        Me.btnenter.BackColor = System.Drawing.Color.Red
+        Me.btnenter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnenter.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnenter.FlatAppearance.BorderSize = 0
+        Me.btnenter.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnenter.Font = New System.Drawing.Font("Showcard Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnenter.ForeColor = System.Drawing.Color.SeaShell
+        Me.btnenter.Location = New System.Drawing.Point(261, 287)
+        Me.btnenter.Name = "btnenter"
+        Me.btnenter.Size = New System.Drawing.Size(62, 29)
+        Me.btnenter.TabIndex = 5
+        Me.btnenter.Text = "Enter"
+        Me.btnenter.UseVisualStyleBackColor = False
+        '
         'FirstPage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(335, 328)
+        Me.Controls.Add(Me.btnenter)
         Me.Controls.Add(Me.textboxplayertwoname)
         Me.Controls.Add(Me.textboxplayeronename)
         Me.Controls.Add(Me.labelplayertwo)
         Me.Controls.Add(Me.labelplayerone)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.PictureBoxTitle)
+        Me.ForeColor = System.Drawing.Color.DarkBlue
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "FirstPage"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TICTOCTOE"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBoxTitle, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBoxTitle As PictureBox
     Friend WithEvents labelplayerone As Label
     Friend WithEvents labelplayertwo As Label
     Friend WithEvents textboxplayeronename As TextBox
     Friend WithEvents textboxplayertwoname As TextBox
+    Friend WithEvents btnenter As Button
 End Class

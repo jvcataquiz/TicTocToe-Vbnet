@@ -3,6 +3,8 @@
     Dim playerturn As Boolean = True
     Dim p_onescore As UShort
     Dim p_twoscore As UShort
+    Public Property playeronename As String
+    Public Property playertwoname As String
 
     'When this button click the Game will Exit
     Private Sub btnquit_Click(sender As Object, e As EventArgs) Handles btnquit.Click
@@ -111,5 +113,9 @@
         playerturn = True
     End Sub
 
+    Private Sub Tictoctoe_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        LabelPlayer1.Text = playeronename
+        LabelPlayer2.Text = playertwoname
 
+    End Sub
 End Class
