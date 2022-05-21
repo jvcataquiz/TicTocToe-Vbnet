@@ -10,6 +10,7 @@
 
     'I grouped all button one To nine in one Function
     Private Sub btnclickonetonine(sender As Object, e As EventArgs) Handles MyBase.Click, btnupperright.Click, btnupperleft.Click, btnupper.Click, btnright.Click, btnmiddle.Click, btnleft.Click, btnbottomright.Click, btnbottomleft.Click, btnbottom.Click
+        'using Try Catch to secure the game for not being crash in the middle of the game, it also secure the pushed button not to push again
         Try
             Dim btntextonetonine As Button = CType(sender, Button)
 
@@ -49,27 +50,35 @@
         '   UpperBox horizontal result 
         If btnupperleft.Text = btnupper.Text And btnupper.Text = btnupperright.Text And btnupperleft.Enabled = False Then
             PlayerChecker(btnupperleft.Text)
+            btnnewgame.PerformClick()
             'MiddeleBox horizontal result 
         ElseIf btnleft.Text = btnmiddle.Text And btnmiddle.Text = btnright.Text And btnleft.Enabled = False Then
             PlayerChecker(btnleft.Text)
+            btnnewgame.PerformClick()
             'BottomBox horizontal result 
         ElseIf btnbottomleft.Text = btnbottom.Text And btnbottom.Text = btnbottomright.Text And btnbottomleft.Enabled = False Then
             PlayerChecker(btnbottomleft.Text)
+            btnnewgame.PerformClick()
             'Left Vertical result
         ElseIf btnupperleft.Text = btnleft.Text And btnleft.Text = btnbottomleft.Text And btnupperleft.Enabled = False Then
             PlayerChecker(btnupperleft.Text)
+            btnnewgame.PerformClick()
             'Middle Vertical result
         ElseIf btnupper.Text = btnmiddle.Text And btnmiddle.Text = btnbottom.Text And btnupper.Enabled = False Then
             PlayerChecker(btnupper.Text)
+            btnnewgame.PerformClick()
             'Right Vertical result
         ElseIf btnupperright.Text = btnright.Text And btnright.Text = btnbottomright.Text And btnupperright.Enabled = False Then
             PlayerChecker(btnupperright.Text)
+            btnnewgame.PerformClick()
             'Diagonal result \
         ElseIf btnupperleft.Text = btnmiddle.Text And btnmiddle.Text = btnbottomright.Text And btnupperleft.Enabled = False Then
             PlayerChecker(btnupperleft.Text)
+            btnnewgame.PerformClick()
             'Diagonal result /
         ElseIf btnupperright.Text = btnmiddle.Text And btnmiddle.Text = btnbottomleft.Text And btnupperright.Enabled = False Then
             PlayerChecker(btnupperright.Text)
+            btnnewgame.PerformClick()
         End If
 
     End Sub
@@ -83,5 +92,15 @@
         End If
 
     End Function
+
+    Private Sub btnnewgame_Click(sender As Object, e As EventArgs) Handles btnnewgame.Click
+        Dim btnonetoninereset() As Button = {btnupperleft, btnupper, btnupperright, btnleft, btnmiddle, btnright, btnbottomleft, btnbottom, btnbottomright}
+        For Each i In btnonetoninereset
+            i.Enabled = True
+            i.Text = ""
+            i.BackColor = System.Drawing.Color.Black
+
+        Next
+    End Sub
 
 End Class

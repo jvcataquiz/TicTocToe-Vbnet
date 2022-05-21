@@ -33,6 +33,7 @@ Partial Class Tictoctoe
         Me.btnbottom = New System.Windows.Forms.Button()
         Me.btnbottomright = New System.Windows.Forms.Button()
         Me.btnquit = New System.Windows.Forms.Button()
+        Me.btnnewgame = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnupperleft
@@ -156,6 +157,19 @@ Partial Class Tictoctoe
         Me.btnquit.Text = "QUIT"
         Me.btnquit.UseVisualStyleBackColor = False
         '
+        'btnnewgame
+        '
+        Me.btnnewgame.BackColor = System.Drawing.Color.Yellow
+        Me.btnnewgame.FlatAppearance.BorderSize = 0
+        Me.btnnewgame.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnnewgame.Font = New System.Drawing.Font("Arial Rounded MT Bold", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnnewgame.Location = New System.Drawing.Point(144, 401)
+        Me.btnnewgame.Name = "btnnewgame"
+        Me.btnnewgame.Size = New System.Drawing.Size(115, 23)
+        Me.btnnewgame.TabIndex = 10
+        Me.btnnewgame.Text = "NEW GAME"
+        Me.btnnewgame.UseVisualStyleBackColor = False
+        '
         'Tictoctoe
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -163,6 +177,7 @@ Partial Class Tictoctoe
         Me.BackColor = System.Drawing.Color.MediumSpringGreen
         Me.ClientSize = New System.Drawing.Size(338, 436)
         Me.ControlBox = False
+        Me.Controls.Add(Me.btnnewgame)
         Me.Controls.Add(Me.btnquit)
         Me.Controls.Add(Me.btnbottomright)
         Me.Controls.Add(Me.btnbottom)
@@ -193,4 +208,5 @@ Partial Class Tictoctoe
     Friend WithEvents btnbottom As Button
     Friend WithEvents btnbottomright As Button
     Friend WithEvents btnquit As Button
+    Friend WithEvents btnnewgame As Button
 End Class
