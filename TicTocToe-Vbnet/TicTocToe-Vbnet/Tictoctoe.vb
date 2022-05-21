@@ -16,6 +16,13 @@
             playerturn = True
 
         End If
+        WinnerChecker()
+    End Sub
+    Public Sub WinnerChecker()
+        If btnupperleft.Text = btnupper.Text And btnupper.Text = btnupperright.Text Then
+            MessageBox.Show("Player1 winss!!!")
+        End If
 
     End Sub
+
 End Class
