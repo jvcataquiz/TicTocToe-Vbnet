@@ -29,6 +29,7 @@ Partial Class FirstPage
         Me.textboxplayeronename = New System.Windows.Forms.TextBox()
         Me.textboxplayertwoname = New System.Windows.Forms.TextBox()
         Me.btnenter = New System.Windows.Forms.Button()
+        Me.btnmusic = New System.Windows.Forms.Button()
         CType(Me.PictureBoxTitle, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -100,11 +101,24 @@ Partial Class FirstPage
         Me.btnenter.Text = "Enter"
         Me.btnenter.UseVisualStyleBackColor = False
         '
+        'btnmusic
+        '
+        Me.btnmusic.BackgroundImage = CType(resources.GetObject("btnmusic.BackgroundImage"), System.Drawing.Image)
+        Me.btnmusic.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnmusic.FlatAppearance.BorderSize = 0
+        Me.btnmusic.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnmusic.Location = New System.Drawing.Point(12, 287)
+        Me.btnmusic.Name = "btnmusic"
+        Me.btnmusic.Size = New System.Drawing.Size(52, 45)
+        Me.btnmusic.TabIndex = 6
+        Me.btnmusic.UseVisualStyleBackColor = True
+        '
         'FirstPage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(335, 328)
+        Me.ClientSize = New System.Drawing.Size(335, 344)
+        Me.Controls.Add(Me.btnmusic)
         Me.Controls.Add(Me.btnenter)
         Me.Controls.Add(Me.textboxplayertwoname)
         Me.Controls.Add(Me.textboxplayeronename)
@@ -130,4 +144,5 @@ Partial Class FirstPage
     Friend WithEvents textboxplayeronename As TextBox
     Friend WithEvents textboxplayertwoname As TextBox
     Friend WithEvents btnenter As Button
+    Friend WithEvents btnmusic As Button
 End Class

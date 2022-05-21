@@ -4663,6 +4663,26 @@
         AA33Pg/NlY2vuSC+AAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="btnmusic.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADUAAAAwCAYAAACxKzLDAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wgAADsIBFShKgAAAA19JREFUaEPtmt8ru1Ecx0fLr4slcUGNRaRxIz9Wbv1q3CklP3ZlLaVwKfduuJBa
+        brmTkguRCylaLUktkT9Afmxim23kQu/v93OKnj3POc94KOdh73rV2s55+rycZ+c554wFvzB/R+r19RUv
+        Ly94fn6WDqqL6tOLRoo68C4mG3piGilZR0gN1SmKRop3AVkRJSslG6JIJZVKpXB/f49IJILHx0duGyWi
+        /LjU09MTbm5uEAqFsLq6iu7uboyNjeHy8pLbXokoPyYVj8dxdnaGtbU1TExMoLGxERaLhTE4OGguqYeH
+        B2xvb2NmZgY9PT0oLS1FTk7Ou5CppC4uLrC0tITOzk7U1taisLAwTUSJ1FKJRAIHBwfweDyorq6GzWbj
+        SqiRUopmr+XlZbS1tXGLzoR0Und3d2hoaOAWq0dxcTEKCgrYa+mkbm9v2a2mLppHXl4eampq0NfXh4WF
+        BTQ3N7P3TSlVVFSEjo4OzM7OYnNzE1dXV6yv2+1mn5tKit4fHx/H+vo6Tk9P2fSu7Gsaqfz8fLhcLjZx
+        0MOWPqdVBK+vKaRowjg8PBRKqDGFVFdXF7eNiKzUf0TJSn2EPy0VjUbZJEKzIi10j46O2KrdtFJbW1ts
+        ZszNzU3jbQtiKinaoi8uLrLP9DCV1N7eHhsRtYSaH5eipU4wGMTOzg52d3fZ66qqKlacWsrr9Wp2uTyG
+        hobe14N6iGJYik5+NjY20N/fj5aWFtTX18PpdKK9vZ0tWKk4tdTAwEBGKavViqmpKcRisbS+PEQxJJVM
+        JjE3NweHw8Et7A211Pz8fEapuro6NurKfiJEMSRFJ0CVlZXcopSopeiv39raym1L0EZxZWWF3QXKfiJE
+        +bQUPV98Ph+3KDW9vb2a/nRuQfsoul0rKipQXl4Ou92O0dFRnJycaNrrIcqnpejgcWRkhCuhhG6zyclJ
+        7jUIOok9Pz9n25FwOMxtkwlRDI3U9PQ024rzZN4oKSnB/v4+9xrfhSiGvlNUbFNTk/CZU1ZWBr/fzyYU
+        Xv/vQhRDUrQyCAQCGB4eThsxOtejKZ6eVx+Zkr+KKIakCNrN0q14fX2N4+Nj9iWnVQA9jD+60/0qohiW
+        kgFRslKyIYpG6lf+Ov8r/4+CQh1kHTGqS0+IwpUye7JS5gjwD9DAjqxayvQWAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAgIAAAAEAIAAoCAEAFgAAACgAAACAAAAAAAEAAAEAIAAAAAAAAAgBAAAAAAAAAAAAAAAAAAAA

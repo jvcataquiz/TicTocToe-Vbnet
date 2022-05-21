@@ -93,11 +93,11 @@
     Function PlayerChecker(check) As String
         If check = "X" Then
             p_onescore += 1
-            Return MessageBox.Show("Winner: Player 1")
+            Return MessageBox.Show("Winner: " + LabelPlayer1.Text)
 
         Else
             p_twoscore += 1
-            Return MessageBox.Show("Winner: Player 2")
+            Return MessageBox.Show("Winner: " + LabelPlayer2.Text)
         End If
 
     End Function

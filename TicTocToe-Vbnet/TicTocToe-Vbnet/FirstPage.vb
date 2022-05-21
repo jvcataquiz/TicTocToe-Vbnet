@@ -1,4 +1,5 @@
 ﻿Public Class FirstPage
+    Dim musicplayer As Boolean
     Private Sub btnenter_Click(sender As Object, e As EventArgs) Handles btnenter.Click
 
         'this condition if the playersname is the same
@@ -17,6 +18,30 @@
             FormTictoctoe.Show()
             'It will close this page
             Me.Hide()
+        End If
+    End Sub
+
+    Private Sub FirstPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        PlayLoopingBackgroundSoundFile()
+        musicplayer = True
+    End Sub
+    Sub PlayLoopingBackgroundSoundFile()
+        My.Computer.Audio.Play("bgmusic.wav", AudioPlayMode.BackgroundLoop)
+    End Sub
+    Sub StopBackgroundSound()
+        My.Computer.Audio.Stop()
+    End Sub
+
+    Private Sub btnmusic_Click(sender As Object, e As EventArgs) Handles btnmusic.Click
+        If musicplayer Then
+            btnmusic.Image = System.Drawing.Image.FromFile("music-off.png")
+            StopBackgroundSound()
+            musicplayer = False
+
+        Else
+            btnmusic.Image = System.Drawing.Image.FromFile("music-on.png")
+            PlayLoopingBackgroundSoundFile()
+            musicplayer = True
         End If
     End Sub
 End Class
