@@ -40,7 +40,7 @@
     End Sub
     'this Function is() For determining the winner of the game
     Public Sub WinnerChecker()
-        'UpperBox horizontal result
+        'UpperBox horizontal result 
         If btnupperleft.Text = btnupper.Text And btnupper.Text = btnupperright.Text And btnupperleft.Enabled = False Then
             PlayerChecker(btnupperleft.Text)
         End If
