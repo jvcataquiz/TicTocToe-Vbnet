@@ -160,6 +160,7 @@ Partial Class Tictoctoe
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.MediumSpringGreen
         Me.ClientSize = New System.Drawing.Size(338, 436)
         Me.ControlBox = False
         Me.Controls.Add(Me.btnquit)
