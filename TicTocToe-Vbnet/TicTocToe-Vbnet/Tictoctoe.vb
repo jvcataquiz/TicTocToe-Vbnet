@@ -103,6 +103,8 @@
     End Function
 
     Private Sub btnnewgame_Click(sender As Object, e As EventArgs) Handles btnnewgame.Click
+
+        'to minimize the space of the workplace and the memory i use array then concatinate the function i need to reset
         Dim btnonetoninereset() As Button = {btnupperleft, btnupper, btnupperright, btnleft, btnmiddle, btnright, btnbottomleft, btnbottom, btnbottomright}
         For Each i In btnonetoninereset
             i.Enabled = True
@@ -114,12 +116,13 @@
     End Sub
 
     Private Sub Tictoctoe_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'Setting label for player names
         LabelPlayer1.Text = playeronename
         LabelPlayer2.Text = playertwoname
-
     End Sub
 
     Private Sub btnback_Click(sender As Object, e As EventArgs) Handles btnback.Click
+        'hiding this page and jump to the first page
         Me.Hide()
         FirstPage.Show()
     End Sub
