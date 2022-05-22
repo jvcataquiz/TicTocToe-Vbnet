@@ -212,6 +212,7 @@ Partial Class Tictoctoe
         Me.btnnewgame.Name = "btnnewgame"
         Me.btnnewgame.Size = New System.Drawing.Size(115, 23)
         Me.btnnewgame.TabIndex = 10
+        Me.btnnewgame.TabStop = False
         Me.btnnewgame.Text = "NEW GAME"
         Me.btnnewgame.UseVisualStyleBackColor = False
         '

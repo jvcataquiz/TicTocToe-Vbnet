@@ -67,6 +67,7 @@ Partial Class FirstPage
         '
         Me.textboxplayeronename.Cursor = System.Windows.Forms.Cursors.Hand
         Me.textboxplayeronename.Location = New System.Drawing.Point(158, 216)
+        Me.textboxplayeronename.MaxLength = 10
         Me.textboxplayeronename.Name = "textboxplayeronename"
         Me.textboxplayeronename.PlaceholderText = "  Min 3 to Max 10 char "
         Me.textboxplayeronename.Size = New System.Drawing.Size(165, 23)

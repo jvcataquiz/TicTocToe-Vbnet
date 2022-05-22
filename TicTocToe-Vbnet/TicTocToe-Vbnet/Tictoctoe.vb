@@ -33,6 +33,9 @@
 
             End If
             'This part Is for the design and disabling the tiles of the game
+
+            'playerturn <> playerturn
+
             btntextonetonine.Enabled = False
             If btntextonetonine.Enabled = False Then
                 btntextonetonine.BackColor = System.Drawing.Color.White
@@ -41,7 +44,7 @@
                 btntextonetonine.Text = ""
 
             End If
-            'calling the function
+            'calling the function winner  checker
             WinnerChecker()
             'Scorer counter
             playeronescore.Text = Convert.ToString(p_onescore)
@@ -54,19 +57,19 @@
     'this Function is() For determining the winner of the game
     Public Sub WinnerChecker()
         '   UpperBox horizontal result 
-        If btnupperleft.Text = btnupper.Text And btnupper.Text = btnupperright.Text And btnupperleft.Enabled = False Then
+        If btnupperleft.Text.Equals(btnupper.Text) And btnupper.Text.Equals(btnupperright.Text) And btnupperleft.Enabled = False Then
             PlayerChecker(btnupperleft.Text)
             btnnewgame.PerformClick()
             'MiddeleBox horizontal result 
-        ElseIf btnleft.Text = btnmiddle.Text And btnmiddle.Text = btnright.Text And btnleft.Enabled = False Then
+        ElseIf btnleft.Text.Equals(btnmiddle.Text) And btnmiddle.Text.Equals(btnright.Text) And btnleft.Enabled = False Then
             PlayerChecker(btnleft.Text)
             btnnewgame.PerformClick()
             'BottomBox horizontal result 
-        ElseIf btnbottomleft.Text = btnbottom.Text And btnbottom.Text = btnbottomright.Text And btnbottomleft.Enabled = False Then
+        ElseIf btnbottomleft.Text.Equals(btnbottom.Text) And btnbottom.Text.Equals(btnbottomright.Text) And btnbottomleft.Enabled = False Then
             PlayerChecker(btnbottomleft.Text)
             btnnewgame.PerformClick()
             'Left Vertical result
-        ElseIf btnupperleft.Text = btnleft.Text And btnleft.Text = btnbottomleft.Text And btnupperleft.Enabled = False Then
+        ElseIf btnupperleft.Text.Equals(btnleft.Text) And btnleft.Text.Equals(btnbottomleft.Text) And btnupperleft.Enabled = False Then
             PlayerChecker(btnupperleft.Text)
             btnnewgame.PerformClick()
             'Middle Vertical result
@@ -78,11 +81,11 @@
             PlayerChecker(btnupperright.Text)
             btnnewgame.PerformClick()
             'Diagonal result \
-        ElseIf btnupperleft.Text = btnmiddle.Text And btnmiddle.Text = btnbottomright.Text And btnupperleft.Enabled = False Then
+        ElseIf btnupperleft.Text.Equals(btnmiddle.Text) And btnmiddle.Text.Equals(btnbottomright.Text) And btnupperleft.Enabled = False Then
             PlayerChecker(btnupperleft.Text)
             btnnewgame.PerformClick()
             'Diagonal result /
-        ElseIf btnupperright.Text = btnmiddle.Text And btnmiddle.Text = btnbottomleft.Text And btnupperright.Enabled = False Then
+        ElseIf btnupperright.Text.Equals(btnmiddle.Text) And btnmiddle.Text.Equals(btnbottomleft.Text) And btnupperright.Enabled = False Then
             PlayerChecker(btnupperright.Text)
             btnnewgame.PerformClick()
         End If
@@ -91,7 +94,7 @@
 
     'To minimize the space And Memory i use this function to determin the winner of the game
     Function PlayerChecker(check) As String
-        If check = "X" Then
+        If check.Equals("X") Then
             p_onescore += 1
             Return MessageBox.Show("Winner: " + LabelPlayer1.Text)
 
