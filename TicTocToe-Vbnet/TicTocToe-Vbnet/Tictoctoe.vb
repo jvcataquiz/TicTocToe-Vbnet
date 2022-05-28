@@ -19,34 +19,29 @@
             Dim btntextonetonine As Button = CType(sender, Button)
 
             'this condition Is determining the value of playerturn then assigning a text value
-            If playerturn Then
-                btntextonetonine.Text = "X"
-                'inverting the value 
-                playerturn = False
 
-
-            Else
-                btntextonetonine.Text = "O"
-
-                'inverting the value 
-                playerturn = True
-
-            End If
             'This part Is for the design and disabling the tiles of the game
 
             'playerturn <> playerturn
 
-            btntextonetonine.Enabled = False
-            If btntextonetonine.Enabled = False Then
-                btntextonetonine.BackColor = System.Drawing.Color.White
-            Else
-                btntextonetonine.BackColor = System.Drawing.Color.Black
-                btntextonetonine.Text = ""
+            If btntextonetonine.Text.Equals("") Then
+                If playerturn Then
+                    btntextonetonine.Text = "X"
+                    'inverting the value 
+                    playerturn = False
 
+                Else
+                    btntextonetonine.Text = "O"
+                    'inverting the value 
+                    playerturn = True
+                End If
+            ElseIf btntextonetonine.Text.Equals("X") Then
+                btntextonetonine.Text = "X"
+            ElseIf btntextonetonine.Text.Equals("O") Then
+                btntextonetonine.Text = "O"
             End If
-            'calling the function winner  checker
-            WinnerChecker()
             'Scorer counter
+            WinnerChecker()
             playeronescore.Text = Convert.ToString(p_onescore)
             playertwoscore.Text = Convert.ToString(p_twoscore)
         Catch ex As Exception
@@ -57,35 +52,35 @@
     'this Function is() For determining the winner of the game
     Public Sub WinnerChecker()
         '   UpperBox horizontal result 
-        If btnupperleft.Text.Equals(btnupper.Text) And btnupper.Text.Equals(btnupperright.Text) And btnupperleft.Enabled = False Then
+        If btnupperleft.Text.Equals(btnupper.Text) And btnupper.Text.Equals(btnupperright.Text) And btnupperleft.Text <> "" Then
             PlayerChecker(btnupperleft.Text)
             btnnewgame.PerformClick()
             'MiddeleBox horizontal result 
-        ElseIf btnleft.Text.Equals(btnmiddle.Text) And btnmiddle.Text.Equals(btnright.Text) And btnleft.Enabled = False Then
+        ElseIf btnleft.Text.Equals(btnmiddle.Text) And btnmiddle.Text.Equals(btnright.Text) And btnleft.Text <> "" Then
             PlayerChecker(btnleft.Text)
             btnnewgame.PerformClick()
             'BottomBox horizontal result 
-        ElseIf btnbottomleft.Text.Equals(btnbottom.Text) And btnbottom.Text.Equals(btnbottomright.Text) And btnbottomleft.Enabled = False Then
+        ElseIf btnbottomleft.Text.Equals(btnbottom.Text) And btnbottom.Text.Equals(btnbottomright.Text) And btnbottomleft.Text <> "" Then
             PlayerChecker(btnbottomleft.Text)
             btnnewgame.PerformClick()
             'Left Vertical result
-        ElseIf btnupperleft.Text.Equals(btnleft.Text) And btnleft.Text.Equals(btnbottomleft.Text) And btnupperleft.Enabled = False Then
+        ElseIf btnupperleft.Text.Equals(btnleft.Text) And btnleft.Text.Equals(btnbottomleft.Text) And btnupperleft.Text <> "" Then
             PlayerChecker(btnupperleft.Text)
             btnnewgame.PerformClick()
             'Middle Vertical result
-        ElseIf btnupper.Text = btnmiddle.Text And btnmiddle.Text = btnbottom.Text And btnupper.Enabled = False Then
+        ElseIf btnupper.Text = btnmiddle.Text And btnmiddle.Text = btnbottom.Text And btnupper.Text <> "" Then
             PlayerChecker(btnupper.Text)
             btnnewgame.PerformClick()
             'Right Vertical result
-        ElseIf btnupperright.Text = btnright.Text And btnright.Text = btnbottomright.Text And btnupperright.Enabled = False Then
+        ElseIf btnupperright.Text = btnright.Text And btnright.Text = btnbottomright.Text And btnupperright.Text <> "" Then
             PlayerChecker(btnupperright.Text)
             btnnewgame.PerformClick()
             'Diagonal result \
-        ElseIf btnupperleft.Text.Equals(btnmiddle.Text) And btnmiddle.Text.Equals(btnbottomright.Text) And btnupperleft.Enabled = False Then
+        ElseIf btnupperleft.Text.Equals(btnmiddle.Text) And btnmiddle.Text.Equals(btnbottomright.Text) And btnupperleft.Text <> "" Then
             PlayerChecker(btnupperleft.Text)
             btnnewgame.PerformClick()
             'Diagonal result /
-        ElseIf btnupperright.Text.Equals(btnmiddle.Text) And btnmiddle.Text.Equals(btnbottomleft.Text) And btnupperright.Enabled = False Then
+        ElseIf btnupperright.Text.Equals(btnmiddle.Text) And btnmiddle.Text.Equals(btnbottomleft.Text) And btnupperright.Text <> "" Then
             PlayerChecker(btnupperright.Text)
             btnnewgame.PerformClick()
         End If
@@ -110,10 +105,7 @@
         'to minimize the space of the workplace and the memory i use array then concatinate the function i need to reset
         Dim btnonetoninereset() As Button = {btnupperleft, btnupper, btnupperright, btnleft, btnmiddle, btnright, btnbottomleft, btnbottom, btnbottomright}
         For Each i In btnonetoninereset
-            i.Enabled = True
             i.Text = ""
-            i.BackColor = System.Drawing.Color.Black
-
         Next
         playerturn = True
     End Sub
